@@ -355,7 +355,6 @@ if year_range and "year" in df.columns:
 
 # ── HEADER ───────────────────────────────────────────────────
 st.markdown('<p class="main-header">🧠 AI-Powered Market Trend & Consumer Sentiment Forecaster</p>', unsafe_allow_html=True)
-st.markdown(f"<center><span class='week-badge'>Week 6 — Fully Integrated Platform</span></center>", unsafe_allow_html=True)
 st.markdown("---")
 
 # ── ALERT BANNER ─────────────────────────────────────────────
