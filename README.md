@@ -203,10 +203,10 @@ pip install faiss-cpu fpdf2 openpyxl
 
 | | |
 |---|---|
-| 👤 **Name** | Gowtham Reddy |
-| 🎓 **Role** | Internship Project — Individual |
+| 👤 **Name** | Indla Venkata Gowtham Kumar Reddy |
+| 🎓 **Role** | Internship Project |
 | 💻 **GitHub** | [gowthamreddy-dev](https://github.com/gowthamreddy-dev) |
-| 🛠️ **Built** | End-to-end solo — data to deployment |
+| 🛠️ **Built** | End-to-end | data to deployment |
 
 ---
 
