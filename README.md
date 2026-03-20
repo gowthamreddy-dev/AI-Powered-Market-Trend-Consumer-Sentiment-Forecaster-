@@ -1,53 +1,54 @@
 # 🧠 AI-Powered Market Trend & Consumer Sentiment Forecaster
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Live-red?style=flat-square&logo=streamlit)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow?style=flat-square)
-![LangChain](https://img.shields.io/badge/LangChain-RAG-green?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-purple?style=flat-square)
+<div align="center">
 
-> An end-to-end AI platform that aggregates consumer reviews, runs LLM-powered sentiment analysis, extracts emerging topics, and delivers real-time insights through an interactive dashboard — with role-based login, alerts, and downloadable reports.
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
+![Streamlit Cloud](https://img.shields.io/badge/Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-🌐 **Live Demo:** [www.aipoweredmarkettrendandconsumersentimentforecaster.streamlit.app](https://www.aipoweredmarkettrendandconsumersentimentforecaster.streamlit.app)
+**An end-to-end AI platform that analyzes consumer sentiment, discovers trends, and delivers actionable insights in real time.**
 
----
+[🌐 Live React Dashboard](https://gowthamreddy-dev.github.io/AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster-/) • [🐍 Streamlit App](https://aipoweredmarkettrendandconsumersentimentforecaster.streamlit.app) • [📂 GitHub Repo](https://github.com/gowthamreddy-dev/AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster-)
 
-## 📋 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [How to Run](#-how-to-run)
-- [User Roles](#-user-roles)
-- [Modules](#-modules)
-- [Dataset](#-dataset)
-- [Milestones](#-milestones)
-- [Key Results](#-key-results)
-- [License](#-license)
+</div>
 
 ---
 
-## 🎯 Project Overview
+## 📌 Project Overview
 
-This platform was built as part of an internship project to demonstrate how AI and NLP can extract actionable consumer intelligence from raw review data.
+Brands receive thousands of consumer reviews daily but struggle to analyze them at scale. This platform solves that by automating the entire pipeline — from raw data ingestion to a live deployed AI-powered dashboard.
 
-It processes **568,454 Amazon Fine Food Reviews**, runs **DistilBERT sentiment analysis** on a 5,000-review sample, extracts **8 consumer topics** using BERTopic, and answers natural language questions using a **RAG pipeline** powered by LangChain + FAISS + Groq LLaMA.
+**Built as a 7-week individual internship project by Gowtham Reddy.**
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- 🔐 **Role-based Login** — Admin, Analyst, Marketing, Intern with different access levels
-- 📊 **Interactive Dashboard** — 5 tabs with live Plotly charts and filters
-- 🤖 **AI Sentiment Analysis** — DistilBERT with 97% average confidence
-- 🏷️ **Topic Modeling** — BERTopic extracts emerging consumer themes
-- 🔍 **RAG Pipeline** — Ask questions about reviews using LangChain + FAISS + Groq
-- 🚨 **Live Alerts** — Auto-detect sentiment spikes and drops
-- 📥 **Report Downloads** — One-click Excel (4 sheets) and PDF reports
-- ☁️ **Word Clouds** — Visual breakdown of positive and negative language
-- 📅 **Year Range Filter** — Explore trends from 2004 to 2012
+- 🤖 **AI Sentiment Analysis** — DistilBERT model with 97% confidence score
+- 🏷️ **Topic Modeling** — BERTopic auto-discovers 8 consumer themes
+- 🔍 **RAG Pipeline** — LangChain + FAISS + Groq LLaMA-3.3-70B for natural language Q&A
+- 📊 **Interactive Dashboard** — 5-tab Streamlit app with Plotly visualizations
+- 🚨 **Smart Alerts** — Auto-detects sentiment drops and spikes
+- 📄 **Report Generation** — One-click PDF & Excel export
+- 🔐 **Role-Based Login** — Admin & User authentication system
+- 🌐 **React Frontend** — Beautiful dark green dashboard built in React
+- ☁️ **Dual Deployment** — Streamlit Cloud + GitHub Pages
+
+---
+
+## 📊 Project Results
+
+| Metric | Value |
+|--------|-------|
+| 📦 Total Reviews Processed | 568,454 |
+| ✅ Positive Sentiment | 67.8% |
+| 🤖 AI Confidence Score | 97% |
+| 🏷️ Topics Discovered | 8 |
+| 📅 Data Range | 2004 – 2012 |
+| ☁️ Deployment | Live on Streamlit Cloud + GitHub Pages |
 
 ---
 
@@ -55,225 +56,170 @@ It processes **568,454 Amazon Fine Food Reviews**, runs **DistilBERT sentiment a
 
 | Layer | Technology |
 |-------|-----------|
-| **Frontend** | Streamlit, Plotly, WordCloud, Matplotlib |
-| **AI / NLP** | HuggingFace Transformers (DistilBERT), BERTopic |
-| **RAG Pipeline** | LangChain, FAISS, Sentence Transformers |
-| **LLM** | Groq API — `llama-3.3-70b-versatile` |
-| **Reports** | fpdf2 (PDF), openpyxl (Excel) |
-| **Data** | Pandas, NumPy |
-| **Deployment** | Streamlit Community Cloud + GitHub |
+| 📦 Data | Pandas, NumPy, Kaggle API |
+| 🤖 AI Sentiment | HuggingFace Transformers (DistilBERT) |
+| 🏷️ Topic Modeling | BERTopic, Sentence-Transformers |
+| 🔍 RAG Pipeline | LangChain, FAISS, Groq LLaMA-3.3-70B |
+| 📊 Dashboard | Streamlit, Plotly, WordCloud, Matplotlib |
+| 📄 Reports | fpdf2 (PDF), openpyxl (Excel) |
+| 🌐 Frontend | React, HTML5, CSS3 |
+| ☁️ Deployment | GitHub Pages, Streamlit Cloud |
+| 🔐 Auth | Streamlit Session State, Role-Based Access |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster/
+📁 AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster/
 │
-├── week6_integrated_app.py      # Main app — Login + All 5 tabs
-├── Week1_data_pipeline.py       # Data scraping, cleaning, normalization
-├── Week2_sentiment_topics.py    # DistilBERT sentiment + BERTopic modeling
-├── Week3_rag_pipeline.py        # LangChain + FAISS + Groq RAG pipeline
-├── week4_dashboard.py           # Streamlit dashboard (standalone)
-├── week5_alerts_reports.py      # Alert detection + PDF/Excel reports
+├── 🌐 index.html                    # React frontend (GitHub Pages)
+├── 🐍 login.py                      # Login page (Streamlit)
+├── 🐍 week6_integrated_app.py       # Main dashboard app
 │
-├── sentiment_results.csv        # AI sentiment scores (5,000 reviews)
-├── topics_summary.csv           # BERTopic discovered topics
-├── rag_insights.csv             # RAG Q&A results
-├── alerts_log.csv               # Generated alerts log
+├── 📊 Week Scripts
+│   ├── Week1_data_pipeline.py       # Data cleaning & processing
+│   ├── Week2_sentiment_topics.py    # AI sentiment + BERTopic
+│   ├── Week3_rag_pipeline.py        # RAG pipeline setup
+│   ├── week4_dashboard.py           # Dashboard development
+│   └── week5_alerts_reports.py      # Alerts & report generation
 │
-├── faiss_index/                 # FAISS vector database
-│   ├── index.faiss
-│   └── index.pkl
+├── 📂 Data Files
+│   ├── sample_reviews.csv           # 5,000-row AI sample
+│   ├── sentiment_results.csv        # Sentiment analysis results
+│   ├── topics_summary.csv           # BERTopic results
+│   ├── rag_insights.csv             # RAG Q&A outputs
+│   └── alerts_log.csv               # Detected alerts
 │
-├── requirements.txt             # Python dependencies
-├── demo.html                    # Interactive project demo
-└── README.md                    # This file
+├── 📄 requirements.txt              # Python dependencies
+├── 🔒 .gitignore                    # Large files excluded
+└── 📖 README.md                     # This file
 ```
 
 ---
 
-## ⚙️ Installation
+## 🚀 Quick Start
 
-### 1. Clone the repository
+### Option 1 — React Frontend (No Install Needed)
 ```bash
+# Clone the repo
 git clone https://github.com/gowthamreddy-dev/AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster-.git
 cd AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster-
+
+# Run with Python HTTP server
+python -m http.server 8000
+
+# Open in browser
+# http://localhost:8000
 ```
 
-### 2. Install dependencies
+### Option 2 — Streamlit Dashboard
 ```bash
-pip install streamlit pandas numpy plotly matplotlib wordcloud fpdf2 openpyxl
-pip install transformers torch bertopic sentence-transformers scikit-learn
-pip install langchain==0.3.25 langchain-groq==0.3.2 langchain-community==0.3.24 langchain-huggingface==0.1.2
-pip install faiss-cpu
-```
+# Install dependencies
+pip install -r requirements.txt
 
-### 3. Set up Groq API Key
-Get your free API key at 👉 [https://console.groq.com](https://console.groq.com)
-
-Open `Week3_rag_pipeline.py` and set your key on line 10:
-```python
-GROQ_API_KEY = "your_groq_api_key_here"
-```
-
-### 4. Download Dataset
-Download **Amazon Fine Food Reviews** from Kaggle:
-👉 [https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)
-
-Place `Reviews.csv` in the project folder.
-
----
-
-## ▶️ How to Run
-
-### Run the full integrated app:
-```bash
-cd "path/to/project/folder"
-streamlit run week6_integrated_app.py
-```
-
-### Run individual modules step by step:
-```bash
-# Week 1 — Data Pipeline
-python Week1_data_pipeline.py
-
-# Week 2 — Sentiment & Topic Modeling
-python Week2_sentiment_topics.py
-
-# Week 3 — RAG Pipeline (requires GROQ_API_KEY)
-python Week3_rag_pipeline.py
-
-# Week 5 — Alerts & Reports
-python week5_alerts_reports.py
+# Run the app
+streamlit run login.py
 ```
 
 ---
 
-## 👥 User Roles
+## 📦 Installation
+
+```bash
+# Clone repository
+git clone https://github.com/gowthamreddy-dev/AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster-.git
+cd AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster-
+
+# Install all dependencies
+pip install streamlit pandas numpy plotly matplotlib wordcloud
+pip install transformers torch bertopic sentence-transformers
+pip install langchain langchain-groq langchain-community langchain-huggingface
+pip install faiss-cpu fpdf2 openpyxl
+```
+
+---
+
+## 🔐 Login Credentials
 
 | Role | Username | Password | Access |
 |------|----------|----------|--------|
-| 🔴 **Admin** | `admin` | `admin123` | Full access — all tabs, reports, alerts |
-| 🔵 **Analyst** | `analyst` | `analyst123` | Sentiment, Topics, AI Insights |
-| 🟢 **Marketing** | `marketing` | `market123` | Overview and Topics only |
-| 🟡 **Intern** | `intern` | `intern123` | Read-only Overview |
+| 👑 Admin | `admin` | `admin123` | Full access — all tabs, reports, alerts |
+| 👤 User | `user` | `user123` | Dashboard access |
 
 ---
 
-## 📦 Modules
-
-### Week 1 — Data Pipeline
-- Loads 568,454 Amazon Fine Food Reviews
-- Cleans nulls, duplicates, normalizes text
-- Generates sentiment labels from star ratings
-- Creates 5,000-row sample for AI processing
-- **Output:** `cleaned_reviews.csv`, `sample_reviews.csv`
-
-### Week 2 — AI Sentiment & Topic Modeling
-- Runs DistilBERT (`distilbert-base-uncased-finetuned-sst-2-english`)
-- 97% average confidence on 5,000 reviews
-- BERTopic extracts 8 consumer topic clusters
-- **Output:** `sentiment_results.csv`, `topics_summary.csv`
-
-### Week 3 — RAG Pipeline
-- Embeds 500 reviews using `all-MiniLM-L6-v2`
-- Stores vectors in FAISS index
-- Answers natural language questions using Groq LLaMA
-- **Output:** `rag_insights.csv`, `faiss_index/`
-
-### Week 4 — Dashboard
-- 5-tab Streamlit app with sidebar filters
-- Rating distribution, sentiment donut, trend lines
-- Word clouds, confidence histograms, box plots
-
-### Week 5 — Alerts & Reports
-- Auto-detects sentiment spikes and drops
-- Generates 4-sheet Excel report
-- Generates professional PDF executive report
-
-### Week 6 — Full Integration
-- All modules combined into one unified app
-- Role-based login system with 4 user types
-- One-click report downloads from sidebar
-
-### Week 7 — Cloud Deployment
-- Pushed to GitHub
-- Deployed on Streamlit Community Cloud
-- Live public URL accessible worldwide
-
----
-
-## 📊 Dataset
-
-| Property | Value |
-|----------|-------|
-| **Name** | Amazon Fine Food Reviews |
-| **Source** | Kaggle / Stanford SNAP |
-| **Total Reviews** | 568,454 |
-| **Analyzed Sample** | 5,000 |
-| **Date Range** | 2004 – 2012 |
-| **Positive Reviews** | 77.9% |
-| **Negative Reviews** | 14.5% |
-| **Neutral Reviews** | 7.6% |
-
----
-
-## 🗓️ Milestones
+## 📅 7-Week Development Journey
 
 | Week | Milestone | Status |
 |------|-----------|--------|
-| Week 1 | Data Pipeline — Scraping, cleaning, normalization | ✅ Complete |
-| Week 2 | AI Sentiment & Topic Modeling — DistilBERT + BERTopic | ✅ Complete |
-| Week 3 | RAG Pipeline — LangChain + FAISS + Groq | ✅ Complete |
-| Week 4 | Dashboard — Streamlit + Plotly | ✅ Complete |
-| Week 5 | Alerts & Reports — PDF + Excel generation | ✅ Complete |
-| Week 6 | Full Integration — Login + Unified app | ✅ Complete |
-| Week 7 | Cloud Deployment — GitHub + Streamlit Cloud | ✅ Complete |
+| Week 1 | Data Pipeline — 568K reviews cleaned & processed | ✅ Complete |
+| Week 2 | AI Sentiment (97%) + BERTopic (8 topics discovered) | ✅ Complete |
+| Week 3 | RAG Pipeline — LangChain + FAISS + Groq LLaMA | ✅ Complete |
+| Week 4 | Interactive 5-tab Streamlit Dashboard | ✅ Complete |
+| Week 5 | Alerts System + PDF & Excel Report Generation | ✅ Complete |
+| Week 6 | Full Integration + Login + Role-Based Access | ✅ Complete |
+| Week 7 | Deployment — Streamlit Cloud + GitHub Pages + React | ✅ Complete |
 
 ---
 
-## 📈 Key Results
+## 🌐 Live Deployments
 
-- ✅ **568,454** reviews loaded and cleaned
-- ✅ **5,000** reviews analyzed with AI (97% confidence)
-- ✅ **8 topics** discovered by BERTopic
-- ✅ **RAG pipeline** answering natural language queries
-- ✅ **Live dashboard** deployed on Streamlit Cloud
-- ✅ **Role-based login** with 4 user types
-- ✅ **PDF + Excel** reports auto-generated
+| Platform | URL | Status |
+|----------|-----|--------|
+| 🌐 React Dashboard | [GitHub Pages](https://gowthamreddy-dev.github.io/AI-Powered-Market-Trend-Consumer-Sentiment-Forecaster-/) | ✅ Live |
+| 🐍 Streamlit App | [Streamlit Cloud](https://aipoweredmarkettrendandconsumersentimentforecaster.streamlit.app) | ✅ Live |
 
 ---
 
-## 🔑 Key Fixes & Lessons Learned
+## 📊 Dashboard Pages
 
-| Issue | Fix |
-|-------|-----|
-| ChromaDB needs C++ Build Tools | Replaced with FAISS |
-| Groq model decommissioned | Use `llama-3.3-70b-versatile` |
-| fpdf2 crashes on emojis | Strip with `to_ascii()` helper |
-| Large files blocked GitHub push | Added `.gitignore` for CSV/SQLite |
-| PowerShell `&&` not working | Use `;` as separator |
+| Page | Description |
+|------|-------------|
+| 📊 Overview | KPI cards, sentiment distribution, yearly trends, sample reviews table |
+| 💬 Sentiment Analysis | Confidence score distribution, model details, star rating breakdown |
+| 🏷️ Topic Modeling | 8 auto-discovered topics with keywords and frequency charts |
+| 🤖 AI Insights | RAG-powered natural language Q&A using Groq LLaMA-3.3-70B |
+| 🚨 Alerts & Reports | Live sentiment alerts, PDF & Excel one-click downloads |
 
 ---
 
-## 🙏 Acknowledgements
+## 🏷️ Discovered Consumer Topics
 
-- [Kaggle — Amazon Fine Food Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)
-- [HuggingFace Transformers](https://huggingface.co/)
-- [LangChain](https://langchain.com/)
-- [Groq](https://groq.com/)
-- [Streamlit](https://streamlit.io/)
-- [BERTopic](https://maartengr.github.io/BERTopic/)
+| Topic | Reviews | Top Keywords |
+|-------|---------|-------------|
+| 🍔 Food & Taste | 456 | taste, flavor, delicious, fresh |
+| 📦 Product Quality | 423 | quality, value, recommend, best |
+| 🚚 Shipping & Delivery | 251 | delivery, package, order, arrived |
+| 🥗 Health & Nutrition | 247 | organic, natural, diet, healthy |
+| ☕ Coffee & Beverages | 198 | coffee, tea, brew, blend |
+| 🎧 Customer Service | 167 | service, support, return, refund |
+| 💰 Price & Value | 142 | price, value, cheap, worth |
+| 📫 Packaging | 121 | package, box, seal, container |
+
+---
+
+## 👨‍💻 About the Developer
+
+| | |
+|---|---|
+| 👤 **Name** | Gowtham Reddy |
+| 🎓 **Role** | Internship Project — Individual |
+| 💻 **GitHub** | [gowthamreddy-dev](https://github.com/gowthamreddy-dev) |
+| 🛠️ **Built** | End-to-end solo — data to deployment |
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is for educational and internship purposes.
 
 ---
 
 <div align="center">
-  Built with ❤️ by <b>gowthamreddy-dev</b> | Internship Project 2026
+
+**Built with ❤️ by Gowtham Reddy | Internship Project 2026**
+
+⭐ Star this repo if you found it useful!
+
 </div>
